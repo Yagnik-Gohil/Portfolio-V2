@@ -10,8 +10,14 @@ export default {
         'services-gradient': 'linear-gradient(135deg, #2ef171, #10983f 75%);',
         'contact-gradient': 'linear-gradient(135deg, #20d7ff, #00a5cd 75%);',
       },
-      colors: {
-
+      keyframes: {
+        zoomInOut: {
+          '0%, 100%': { transform: 'scale(0.6)' }, // Start and end smaller and more transparent
+          '40%': { transform: 'scale(1)' }, // Fully visible and normal size at 50%
+        },
+      },
+      animation: {
+        'zoom-blink': 'zoomInOut 1.5s ease-in-out infinite', // Name of the animation with timing options
       },
     },
   },
