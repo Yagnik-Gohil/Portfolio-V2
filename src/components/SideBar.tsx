@@ -2,9 +2,13 @@ import { Link } from "react-router-dom";
 import { FULL_NAME, IMAGE, TAG_LINE } from "../constant";
 import SideBarLink from "./SideBarLink";
 
-const SideBar = () => {
+const SideBar = ({ display }: { display: "none" | "flex" }) => {
   return (
-    <div className="w-[40%] bg-[#0003] md:w-[25%] max-w-[380px] flex flex-col h-[100%] border-r border-[#FFFFFF1A] text-white rounded-bl-2xl">
+    <div
+      className={`${
+        display === "none" ? "-translate-x-full bg-[#0003]" : "translate-x-0 bg-[#00000073]"
+      } absolute overflow-hidden md:relative md:translate-x-0 transform transition-transform duration-500 ease-in-out flex flex-col md:w-[40%] lg:w-[25%] max-w-[380px] w-[100%] h-[100%] border-r border-[#FFFFFF1A] text-white rounded-bl-2xl z-10`}
+    >
       <div className="flex flex-col px-8 py-10 border-b border-[#ffffff1a] items-start gap-5">
         <Link
           to={"/"}
@@ -37,7 +41,7 @@ const SideBar = () => {
       <div className="border-t border-[#ffffff1a] flex flex-col justify-start p-8 items-stretch">
         <Link
           to={"/"}
-          className="bg-[#ffffff1a] hover:bg-[#ffffff4d] rounded-[10px] px-3 py-4 flex items-center justify-center text-[#ffffffa6] hover:text-white transition-colors duration-300" 
+          className="bg-[#ffffff1a] hover:bg-[#ffffff4d] rounded-[10px] px-3 py-4 flex items-center justify-center text-[#ffffffa6] hover:text-white transition-colors duration-300"
         >
           <div className=" ">Send Mail</div>
         </Link>
