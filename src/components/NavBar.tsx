@@ -9,7 +9,7 @@ const NavBar = () => {
         <div className="h-[12px] w-[12px] rounded-[50%] bg-[#ffffff26] hover:bg-[#ffffff4d] transition-colors duration-300"></div>
       </div>
       <div>
-        <p className="text-[#FFFFFF4d] select-none">{FULL_NAME}</p>
+        <p className="text-[#FFFFFF4d]">{FULL_NAME}</p>
       </div>
     </div>
   );

@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@media (max-width: 640px) {
+  .custom-blur {
+    backdrop-filter: blur(50px);
+  }
+}
+*::-webkit-scrollbar {
+  display: none;
+}
