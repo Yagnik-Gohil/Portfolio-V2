@@ -9,8 +9,10 @@ export const CLOSE =
 export const HOME = {
   PROFILE:
     "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c5e464e6539faa9bf72fde_Memoji%202.avif",
-  PROFILE_2: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c5e464a3635371e91b3b1f_Memoji%201.avif",
-  PROFILE_3: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c5e46468912ce3f3041d41_Memoji%203.avif",
+  PROFILE_2:
+    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c5e464a3635371e91b3b1f_Memoji%201.avif",
+  PROFILE_3:
+    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c5e46468912ce3f3041d41_Memoji%203.avif",
   INTRODUCTION: "👋 Hello, I'm David – Crafting Creative Code!",
   SUMMARY:
     "As a creative developer, I blend code and design to build unique, user-centric experiences. Let's turn your ideas into a dynamic and engaging digital reality!",
@@ -31,4 +33,121 @@ export const ABOUT = {
   INTRODUCTION: "Inside My World – The Story Behind Work",
   SUMMARY:
     "Get a glimpse into my journey and the inspiration behind my work. Discover what drives me and how my experiences shape my creative vision.",
+  PASSION: "✨ The Drive, Passion, and Vision Behind My Work",
+  PASSION_SUMMARY_1:
+    "I'm David Harrison, a creative developer passionate about turning ideas into engaging digital experiences. Starting in New Jersey, my love for tech and design grew from building simple sites to developing complex applications.",
+  PASSION_SUMMARY_2:
+    "I blend technical skill with design to create seamless, user-friendly solutions, always pushing boundaries to exceed expectations.",
+  SKILL: "🔆 Unleashing My Skillful Superpowers",
+  SKILL_LIST: [
+    "Back-End Development",
+    "Front-End Development",
+    "System Design",
+    "Database Design",
+    "Debugging",
+    "DSA",
+    "Problem Solving",
+    "Deployment",
+  ],
+  AWARD: "🏆 Showcasing My Awards and Honors",
+  AWARD_LIST: [
+    { name: "🏆 Innovative Web Developer", year: 2024 },
+    { name: "🏅 Top Emerging Tech Talent", year: 2024 },
+    { name: "🥇 Best App Developer", year: 2024 },
+  ],
+};
+export const PORTFOLIO = {
+  TITLE: "Collection of My Exceptional Solutions",
+  SUMMARY:
+    "Explore a selection of my top digital projects, where creativity meets innovation. Each piece reflects my commitment to delivering impactful solutions.",
+  LIST: [
+    {
+      id: "rick-brown",
+      color: "#8cc71b",
+      image:
+        "https://cdn.prod.website-files.com/66c737bcc8413594906f4c3e/66c744b391685bdacff10184_Thumbnail.avif",
+      name: "Rick Brown",
+      year: "2024",
+      type: "Website",
+      tags: ["Portfolio"],
+      summary:
+        "Developing the 'Rick Brown' portfolio site was a challenge to blend striking visuals with user-friendly functionality. The goal was to showcase Rick's diverse photography while ensuring a seamless, intuitive experience.",
+      github: "https://rick-brown.framer.website/",
+      live: "https://rick-brown.framer.website/",
+      gallery: [
+        "https://cdn.prod.website-files.com/66c737bcc8413594906f4c3e/66c744e3a56792ed239fe39b_1.avif",
+        "https://cdn.prod.website-files.com/66c737bcc8413594906f4c3e/66c744b9315d3bc71db75f37_2.avif",
+      ],
+    },
+    {
+      id: "it-conf",
+      color: "#FFB3C1",
+      image:
+        "https://cdn.prod.website-files.com/66c737bcc8413594906f4c3e/66c7432110a89d8aa3a1e767_Thumbnail.avif",
+      name: "IT/CONF",
+      year: "2024",
+      type: "Website",
+      tags: ["Portfolio"],
+      summary: "",
+      github: "",
+      live: "",
+      gallery: [],
+    },
+    {
+      id: "adzen",
+      color: "#e7ff53",
+      image:
+        "https://cdn.prod.website-files.com/66c737bcc8413594906f4c3e/66c742188c0a131331c46cf1_Thumbnail.avif",
+      name: "ADZEN",
+      year: "2024",
+      type: "Website",
+      tags: ["Portfolio"],
+      summary: "",
+      github: "",
+      live: "",
+      gallery: [],
+    },
+    {
+      id: "andrew-williams",
+      color: "#111",
+      image:
+        "https://cdn.prod.website-files.com/66c737bcc8413594906f4c3e/66c73fce86d7ff45cb82f641_Thumbnail.avif",
+      name: "Andrew Williams",
+      year: "2024",
+      type: "Website",
+      tags: ["Portfolio"],
+      summary: "",
+      github: "",
+      live: "",
+      gallery: [],
+    },
+  ],
+};
+export const ICON = {
+  BACK: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c7523ea5cb4b2e78c817ad_CaretLeft.svg",
+  DESKTOP:
+    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae5fc3ca563f778f01_Emoji%201.avif",
+  GEAR: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae2b304d5825fae222_Emoji%202.avif",
+  FLAG: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae34a89c67f40e953e_Emoji%203.avif",
+};
+export const SERVICES = {
+  INTRODUCTION: "Explore My Range of Specialized Services",
+  SUMMARY:
+    "Explore services crafted to bring your vision to life. From innovative solutions to expert support, I offer everything needed for exceptional results.",
+  LIST: [
+    {
+      ICON: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c855e99a3702f742308a11_SidebarSimple.svg",
+      TITLE: "Full-Stack Development",
+      SUMMARY:
+        "End-to-end development services, covering both front-end and back-end, to create robust and scalable web applications.",
+      TAGS: [
+        "Responsive Design",
+        "Custom Features",
+        "Performance Boost",
+        "Responsive Design",
+        "Custom Features",
+        "Performance Boost",
+      ],
+    },
+  ],
 };

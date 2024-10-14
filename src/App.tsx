@@ -1,4 +1,4 @@
-import { Link, Route, Routes, useLocation } from "react-router-dom"; // Import useLocation
+import { Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import NavBar from "./components/NavBar";
@@ -6,25 +6,14 @@ import SideBar from "./components/SideBar";
 import { CLOSE, MENU } from "./constant";
 import { useState } from "react";
 import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import PortfolioDetails from "./pages/PortfolioDetails";
+import { useBackground } from "./context/background";
+import Services from "./pages/Services";
 
 function App() {
   const [path, setPath] = useState(MENU);
   const [display, setDisplay] = useState<"none" | "flex">("none");
-
-  // Get the current location
-  const location = useLocation();
-
-  // Map routes to background classes
-  const bgClasses: { [key: string]: string } = {
-    "/": "bg-home-gradient",
-    "/about": "bg-about-gradient",
-    "/portfolio": "bg-portfolio-gradient",
-    "/services": "bg-services-gradient",
-    "/contact": "bg-contact-gradient",
-  };
-
-  // Get the corresponding background class for the current route
-  const bgClass = bgClasses[location.pathname] || "bg-home-gradient"; // Fallback to home-gradient
 
   const handleMenu = () => {
     if (path === MENU) {
@@ -35,12 +24,14 @@ function App() {
       setDisplay("none");
     }
   };
+  const { background } = useBackground();
 
   return (
     <div
-      className={`${bgClass} h-dvh flex justify-center items-center px-6 py-5 md:p-12 select-none`}
+      className="h-dvh flex justify-center items-center px-6 py-5 md:p-12 select-none"
+      style={{ backgroundImage: background}}
     >
-      <div className="bg-[#000000d9] w-[100%] h-[100%] rounded-2xl max-w-[1440px] max-h-[1080px] flex flex-col">
+      <div className="bg-[#000000d9] w-[100%] h-[100%] rounded-2xl max-w-[1440px] max-h-[1080px] flex flex-col border border-[#ffffff26]">
         <NavBar />
         <div className="flex overflow-hidden flex-1 relative rounded-b-2xl">
           <SideBar display={display}></SideBar>
@@ -54,10 +45,13 @@ function App() {
                 className="w-[20px] h-[20px] opacity-65 pointer-events-none max-w-[100%] inline-block align-middle z-[2]"
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col flex-1">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/portfolio/:id" element={<PortfolioDetails />} />
+                <Route path="/services" element={<Services />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>
