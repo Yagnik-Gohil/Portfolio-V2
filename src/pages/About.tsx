@@ -105,7 +105,7 @@ const About = () => {
             {ABOUT.AWARD_LIST.map((award, index) => {
               return (
                 <div
-                  className="flex justify-between items-center p-4 bg-[#ffc4270d] rounded-xl font-medium relative overflow-hidden hover:bg-[#ffc42733] transition-all duration-500"
+                  className="group flex justify-between items-center p-4 bg-[#ffc4270d] rounded-xl font-medium relative overflow-hidden hover:bg-[#ffc42733] transition-all duration-500 hover:shadow-card"
                   key={index}
                 >
                   <p className="text-[#ffc427]">{award.name}</p>
@@ -120,7 +120,7 @@ const About = () => {
                       className="font-medium"
                     />
                   </div>
-                  <div className="flex flex-col justify-start items-center absolute top-0 right-0 left-0">
+                  <div className="flex flex-col justify-start items-center absolute top-0 right-0 left-0 opacity-0 group-hover:opacity-100">
                     <div
                       className="rounded-[100px] w-60 h-16 mt-[-32px] border-[#ffc42733]"
                       style={{ background: "#ffc42733", filter: "blur(50px)" }}

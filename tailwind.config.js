@@ -12,6 +12,9 @@ export default {
       animation: {
         'zoom-blink': 'zoomInOut 1.5s ease-in-out infinite', // Name of the animation with timing options
       },
+      boxShadow: {
+        card: 'inset 0 1px 0 0 rgba(255, 255, 255, 0.15)',
+      },
     },
   },
   plugins: [],

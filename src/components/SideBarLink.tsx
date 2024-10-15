@@ -5,16 +5,19 @@ const SideBarLink = ({
   color,
   text,
   counter,
+  closeSidebar,
 }: {
   to: string;
   color: string;
   text: string;
   counter: number;
+  closeSidebar: VoidFunction;
 }) => {
   return (
     <Link
       to={to}
       className="flex px-[12px] py-[6px] justify-start items-center hover:bg-[#ffffff0d] rounded-lg group transition-colors duration-300"
+      onClick={closeSidebar}
     >
       <div className="flex justify-start items-center flex-1 gap-[10px]">
         <div

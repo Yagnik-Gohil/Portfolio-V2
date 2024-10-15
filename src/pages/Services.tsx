@@ -3,6 +3,8 @@ import Tag from "../components/Tag";
 import { ICON, SERVICES } from "../constant";
 import { useBackground } from "../context/background";
 import ServiceIcon from "../components/ServiceIcon";
+import ServiceCard from "../components/ServiceCard";
+import TechnologyCard from "../components/TechnologyCard";
 
 const Services = () => {
   const { setBackground } = useBackground();
@@ -52,49 +54,26 @@ const Services = () => {
           />
         </div>
       </section>
-      <section className="grid grid-cols-1 xl:grid-cols-2 p-6 md:p-12 gap-3">
+      <section className="grid grid-cols-1 lg:grid-cols-2 p-6 md:p-12 gap-3 border-b border-b-[#ffffff1a]">
         {SERVICES.LIST.map((item, index) => {
-          return (
-            <div
-              key={index}
-              className="flex flex-col gap-16 bg-[#2ef1710d] border border-[#2ef1710d] rounded-xl p-6 pb-8 relative overflow-hidden"
-            >
-              <div className="flex flex-col items-start gap-6">
-                <div className="flex justify-center items-center rounded-xl p-4 md:p-5 bg-[#2ef1710d] border-[#2ef1710d]">
-                  <img src={item.ICON} className="w-6 h-6 md:w-7 md:h-7" />
-                </div>
-                <div className="flex flex-col gap-2 max-w-80">
-                  <h2 className="text-[#2ef171] text-lg md:text-[28px] lg:text-[32px] font-medium leading-[112%]">
-                    {item.TITLE}
-                  </h2>
-                  <p className="text-[#ffffff80] font-medium leading-[112%] max-w-[400px] text-sm lg:max-w-[296px]">
-                    {item.SUMMARY}
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex justify-start items-start flex-wrap gap-2 max-w-80">
-                {item.TAGS.map((tag, index) => {
-                  return (
-                    <Tag
-                      background="#2ef1710d"
-                      border="#2ef17133"
-                      title={tag}
-                      color="#2ef171"
-                      key={index}
-                    />
-                  );
-                })}
-              </div>
-              <div className="h-1 absolute right-0 bottom-0 w-full bg-[#2ef171]"></div>
-              <div className="flex flex-col justify-start items-center absolute top-0 right-0 left-0">
-                <div
-                  className="rounded-[100px] w-60 h-16 mt-[-32px] bg-[#2ef17133]"
-                  style={{ filter: "blur(50px)" }}
-                ></div>
-              </div>
-            </div>
-          );
+          return <ServiceCard item={item} key={index} />;
+        })}
+      </section>
+      <section className="grid grid-cols-1 lg:grid-cols-2 p-6 md:p-12 border-b border-b-[#ffffff1a] gap-4">
+        <div className="flex">
+          <h2 className="text-white max-w-[240px] text-xl md:text-xl md:max-w-[400px] lg:text-2xl lg:max-w-[280px] leading-[112%]">
+            {SERVICES.TECHNOLOGY_TITLE}
+          </h2>
+        </div>
+        <div>
+          <p className="text-[#ffffff80] leading-[112%] text-sm">
+            {SERVICES.TECHNOLOGY_SUMMARY}
+          </p>
+        </div>
+      </section>
+      <section className="grid grid-cols-2 lg:grid-cols-4 p-6 md:p-12 gap-3">
+        {SERVICES.TECHNOLOGY.map((item, index) => {
+          return <TechnologyCard item={item} key={index} />
         })}
       </section>
     </>

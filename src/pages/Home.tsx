@@ -32,7 +32,7 @@ const Home = () => {
             iconBackground: "#ffffff0d",
             bottomLine: "#ffc427",
           }}
-          className="bg-[#ffc4271a] hover:bg-[#ffc42733] transition-all duration-500 w-full text-[#ffc427] border border-[#ffc4271a] relative flex flex-col gap-[14px] flex-1 justify-start items-start overflow-hidden p-6 rounded-xl"
+          className="bg-[#ffc4271a] hover:bg-[#ffc42733] transition-all duration-500 w-full text-[#ffc427] border border-[#ffc4271a] relative flex flex-col gap-[14px] flex-1 justify-start items-start overflow-hidden p-6 rounded-xl hover:shadow-card"
         />
         <HomeCard
           to="portfolio"
@@ -45,7 +45,7 @@ const Home = () => {
             iconBackground: "#c06fff0d",
             bottomLine: "#c06fff",
           }}
-          className="bg-[#bf6fff1a] hover:bg-[#bf6fff33] transition-all duration-500 w-full text-[#c06fff] border border-[#bf6fff1a] relative flex flex-col gap-[14px] flex-1 justify-start items-start overflow-hidden p-6 rounded-xl"
+          className="bg-[#bf6fff1a] hover:bg-[#bf6fff33] transition-all duration-500 w-full text-[#c06fff] border border-[#bf6fff1a] relative flex flex-col gap-[14px] flex-1 justify-start items-start overflow-hidden p-6 rounded-xl hover:shadow-card"
         />
         <HomeCard
           to="services"
@@ -58,7 +58,7 @@ const Home = () => {
             iconBackground: "#2ef1710d",
             bottomLine: "#2ef171",
           }}
-          className="bg-[#2ef1711a] hover:bg-[#2ef17133] transition-all duration-500 w-full text-[#2ef171] border border-[#bf6fff1a] relative flex flex-col gap-[14px] flex-1 justify-start items-start overflow-hidden p-6 rounded-xl"
+          className="bg-[#2ef1711a] hover:bg-[#2ef17133] transition-all duration-500 w-full text-[#2ef171] border border-[#bf6fff1a] relative flex flex-col gap-[14px] flex-1 justify-start items-start overflow-hidden p-6 rounded-xl hover:shadow-card"
         />
         <HomeCard
           to="contact"
@@ -71,7 +71,7 @@ const Home = () => {
             iconBackground: "#20d7ff0d",
             bottomLine: "#20d7ff",
           }}
-          className="bg-[#20d7ff1a] hover:bg-[#20d7ff33] transition-all duration-500 w-full text-[#20d7ff] border border-[#bf6fff1a] relative flex flex-col gap-[14px] flex-1 justify-start items-start overflow-hidden p-6 rounded-xl"
+          className="bg-[#20d7ff1a] hover:bg-[#20d7ff33] transition-all duration-500 w-full text-[#20d7ff] border border-[#bf6fff1a] relative flex flex-col gap-[14px] flex-1 justify-start items-start overflow-hidden p-6 rounded-xl hover:shadow-card"
         />
       </section>
     </>

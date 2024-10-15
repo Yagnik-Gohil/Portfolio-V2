@@ -129,12 +129,32 @@ export const ICON = {
     "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae5fc3ca563f778f01_Emoji%201.avif",
   GEAR: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae2b304d5825fae222_Emoji%202.avif",
   FLAG: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae34a89c67f40e953e_Emoji%203.avif",
+  PEN: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae78fee44578264989_Emoji%204.avif",
+  BOOK: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae78fee4457826497e_Emoji%205.avif",
+  MAIL_BOX:
+    "	https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae9d981caeba7c30a1_Emoji%206.avif",
+  PHONE:
+    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c880197082613962888d36_Phone.svg",
 };
 export const SERVICES = {
   INTRODUCTION: "Explore My Range of Specialized Services",
   SUMMARY:
     "Explore services crafted to bring your vision to life. From innovative solutions to expert support, I offer everything needed for exceptional results.",
   LIST: [
+    {
+      ICON: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c855e99a3702f742308a11_SidebarSimple.svg",
+      TITLE: "Web Development",
+      SUMMARY:
+        "End-to-end development services, covering both front-end and back-end, to create robust and scalable web applications.",
+      TAGS: [
+        "Responsive Design",
+        "Custom Features",
+        "Performance Boost",
+        "Responsive Design",
+        "Custom Features",
+        "Performance Boost",
+      ],
+    },
     {
       ICON: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c855e99a3702f742308a11_SidebarSimple.svg",
       TITLE: "Full-Stack Development",
@@ -148,6 +168,75 @@ export const SERVICES = {
         "Custom Features",
         "Performance Boost",
       ],
+    },
+  ],
+  TECHNOLOGY_TITLE: "🧩 Tools & Technologies Powering My Creations",
+  TECHNOLOGY_SUMMARY:
+    "Explore the cutting-edge tools and technologies I use to build innovative and effective digital solutions, from web and mobile apps to seamless integrations and optimizations.",
+  TECHNOLOGY: [
+    {
+      NAME: "Node.js",
+      ICON: "",
+      LINK: "https://nodejs.org/en",
+    },
+    {
+      NAME: "Node.js",
+      ICON: "",
+      LINK: "https://nodejs.org/en",
+    },
+    {
+      NAME: "Node.js",
+      ICON: "",
+      LINK: "https://nodejs.org/en",
+    },
+    {
+      NAME: "Node.js",
+      ICON: "",
+      LINK: "https://nodejs.org/en",
+    },
+    {
+      NAME: "Node.js",
+      ICON: "",
+      LINK: "https://nodejs.org/en",
+    },
+    {
+      NAME: "Node.js",
+      ICON: "",
+      LINK: "https://nodejs.org/en",
+    },
+  ],
+};
+export const CONTACT = {
+  TITLE: "Let's Connect and Collaborate",
+  SUMMARY:
+    "Reach out to discuss your project or ideas. I’m here to provide support and turn your vision into reality.",
+  FORM: "📤 Get In Touch",
+  FORM_SUMMARY:
+    "Have a question or want to start a project? Contact me, and let’s make your ideas come to life!",
+  SOCIAL_LINK: "🔹 Follow Me",
+  CONTACT: "🦋 Book a Call",
+  CONTACT_SUMMARY:
+    "Have a question or want to start a project? Contact me, and let’s make your ideas come to life!",
+  LINK: [
+    {
+      NAME: "LinkedIn",
+      LINK: "https://www.linkedin.com/",
+      ICON: "",
+    },
+    {
+      NAME: "LinkedIn",
+      LINK: "https://www.linkedin.com/",
+      ICON: "",
+    },
+    {
+      NAME: "LinkedIn",
+      LINK: "https://www.linkedin.com/",
+      ICON: "",
+    },
+    {
+      NAME: "LinkedIn",
+      LINK: "https://www.linkedin.com/",
+      ICON: "",
     },
   ],
 };
