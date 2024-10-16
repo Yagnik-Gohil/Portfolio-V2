@@ -11,6 +11,7 @@ import PortfolioDetails from "./pages/PortfolioDetails";
 import { useBackground } from "./context/background";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import Licenses from "./pages/Licenses";
 
 function App() {
   const [path, setPath] = useState(MENU);
@@ -60,6 +61,7 @@ function App() {
                 <Route path="/portfolio/:id" element={<PortfolioDetails />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/licenses" element={<Licenses />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>

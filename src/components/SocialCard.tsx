@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import linkedin from "../assets/linkedin.svg";
 
 const SocialCard = ({
   item,
@@ -20,7 +19,7 @@ const SocialCard = ({
       <div className="flex flex-col justify-center items-center transform transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-5px] lg:pt-3">
         {/* Icon */}
         <img
-          src={linkedin}
+          src={item.ICON}
           className="w-7 h-7"
           style={{
             filter:

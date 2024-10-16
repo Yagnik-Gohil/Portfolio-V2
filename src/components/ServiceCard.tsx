@@ -11,7 +11,7 @@ const ServiceCard = ({
   };
 }) => {
   return (
-    <div className="flex flex-col gap-16 bg-[#2ef1710d] border border-[#2ef1710d] rounded-xl p-6 pb-8 relative overflow-hidden hover:shadow-card">
+    <div className="flex flex-col gap-16 bg-[#2ef1710d] border border-[#2ef1710d] rounded-xl p-6 pb-8 relative overflow-hidden transition-all duration-500 hover:shadow-card">
       <div className="flex flex-col items-start gap-6">
         <div className="flex justify-center items-center rounded-xl p-4 md:p-5 bg-[#2ef1710d] border-[#2ef1710d]">
           <img src={item.ICON} className="w-6 h-6 md:w-7 md:h-7" />

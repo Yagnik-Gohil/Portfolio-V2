@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import nodejs from "../assets/node-js.svg";
 
 const TechnologyCard = ({
   item,
@@ -20,11 +19,13 @@ const TechnologyCard = ({
       <div className="flex flex-col justify-center items-center transform transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-5px] lg:pt-3">
         {/* Icon */}
         <img
-          src={nodejs}
+          src={item.ICON}
           className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-5px]"
           style={{
             filter:
-              "invert(52%) sepia(91%) saturate(2948%) hue-rotate(97deg) brightness(101%) contrast(98%)",
+              "invert(64%) sepia(95%) saturate(626%) hue-rotate(90deg) brightness(101%) contrast(92%)",
+            WebkitFilter:
+              "invert(64%) sepia(95%) saturate(626%) hue-rotate(90deg) brightness(101%) contrast(92%)",
           }}
         />
 

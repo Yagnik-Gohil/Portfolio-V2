@@ -15,7 +15,7 @@ const SideBar = ({
         display === "none"
           ? "translate-x-full bg-[#0003]"
           : "translate-x-0 bg-[#00000073]"
-      } custom-blur absolute right-0 overflow-hidden md:relative md:translate-x-0 transform transition-transform duration-500 ease-in-out flex flex-col md:w-[40%] lg:w-[25%] max-w-[380px] w-[100%] h-[100%] border-l border-[#FFFFFF1A] text-white rounded-bl-2xl z-50`}
+      } custom-blur absolute right-0 overflow-hidden md:relative md:translate-x-0 transform transition-transform duration-500 ease-in-out flex flex-col md:w-[40%] lg:w-[25%] max-w-[380px] w-[100%] h-[100%] border-l border-[#FFFFFF1A] border-r text-white rounded-bl-2xl z-50`}
     >
       <div className="flex flex-col px-8 py-10 border-b border-[#ffffff1a] items-start gap-5">
         <Link

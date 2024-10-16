@@ -1,33 +1,66 @@
+import face1 from "./assets/face-1.avif";
+import face2 from "./assets/face-2.avif";
+import face3 from "./assets/face-3.avif";
+
+import menu from "./assets/menu.svg";
+import close from "./assets/close.svg";
+
+import smile from "./assets/smile.svg";
+import suitcase from "./assets/suitcase.svg";
+import grid from "./assets/grid.svg";
+import phone from "./assets/phone.svg";
+
+import back from "./assets/back.svg";
+import desktop from "./assets/desktop.svg";
+import gear from "./assets/gear.svg";
+import flag from "./assets/flag.svg";
+import pen from "./assets/fountain-pen.svg";
+import book from "./assets/book.svg";
+import mailbox from "./assets/mailbox.svg";
+
+import web from "./assets/web-section.svg";
+
+import node from "./assets/node-js.svg";
+import javascript from "./assets/javascript.svg";
+import typescript from "./assets/typescript.svg";
+import express from "./assets/express.svg";
+import nest from "./assets/nestjs.svg";
+import html5 from "./assets/html5.svg";
+import css3 from "./assets/css3.svg";
+import tailwind from "./assets/tailwind-css.svg";
+import sql from "./assets/sql.svg";
+import postgresql from "./assets/postgresql.svg";
+import postman from "./assets/postman.svg";
+import react from "./assets/react.svg";
+import vscode from "./assets/vscode.svg";
+import github from "./assets/github.svg";
+
+import linkedin from "./assets/linkedin.svg";
+import x from "./assets/x.svg";
+import instagram from "./assets/instagram.svg";
+
 export const FULL_NAME = "Yagnik Gohil";
 export const TAG_LINE = "Software Engineer";
-export const IMAGE =
-  "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c5e464a3635371e91b3b1f_Memoji%201.avif";
-export const MENU =
-  "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c6fd3a5d4ab5ac25517ee4_Menu.svg";
-export const CLOSE =
-  "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c6fd3a29593cc3e8aa46d8_Close.svg";
+
+export const IMAGE = face1;
+export const MENU = menu;
+export const CLOSE = close;
+
 export const HOME = {
-  PROFILE:
-    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c5e464e6539faa9bf72fde_Memoji%202.avif",
-  PROFILE_2:
-    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c5e464a3635371e91b3b1f_Memoji%201.avif",
-  PROFILE_3:
-    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c5e46468912ce3f3041d41_Memoji%203.avif",
+  PROFILE: face1,
+  PROFILE_2: face2,
+  PROFILE_3: face3,
   INTRODUCTION: "👋 Hello, I'm David – Crafting Creative Code!",
   SUMMARY:
     "As a creative developer, I blend code and design to build unique, user-centric experiences. Let's turn your ideas into a dynamic and engaging digital reality!",
   ABOUT: "A Peek into My Creative Journey",
-  ABOUT_ICON:
-    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c603551bf55d8010fa79e1_Smiley.svg",
+  ABOUT_ICON: smile,
   PORTFOLIO: "Top Work and Creative Projects",
-  PORTFOLIO_ICON:
-    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66d866192eb58f5ba3b6f58e_SuitcaseSimple.svg",
+  PORTFOLIO_ICON: suitcase,
   SERVICES: "Solutions to Meet Your Goals",
-  SERVICES_ICON:
-    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c60355db4353fb3d399f51_CirclesFour.svg",
+  SERVICES_ICON: grid,
   CONTACT: "Let's Start a Conversation",
-  CONTACT_ICON:
-    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c6035510e1d03892cc44cd_ChatTeardropDots.svg",
+  CONTACT_ICON: phone,
 };
 export const ABOUT = {
   INTRODUCTION: "Inside My World – The Story Behind Work",
@@ -124,17 +157,14 @@ export const PORTFOLIO = {
   ],
 };
 export const ICON = {
-  BACK: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c7523ea5cb4b2e78c817ad_CaretLeft.svg",
-  DESKTOP:
-    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae5fc3ca563f778f01_Emoji%201.avif",
-  GEAR: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae2b304d5825fae222_Emoji%202.avif",
-  FLAG: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae34a89c67f40e953e_Emoji%203.avif",
-  PEN: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae78fee44578264989_Emoji%204.avif",
-  BOOK: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae78fee4457826497e_Emoji%205.avif",
-  MAIL_BOX:
-    "	https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c852ae9d981caeba7c30a1_Emoji%206.avif",
-  PHONE:
-    "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c880197082613962888d36_Phone.svg",
+  BACK: back,
+  DESKTOP: desktop,
+  GEAR: gear,
+  FLAG: flag,
+  PEN: pen,
+  BOOK: book,
+  MAIL_BOX: mailbox,
+  PHONE: phone,
 };
 export const SERVICES = {
   INTRODUCTION: "Explore My Range of Specialized Services",
@@ -142,7 +172,7 @@ export const SERVICES = {
     "Explore services crafted to bring your vision to life. From innovative solutions to expert support, I offer everything needed for exceptional results.",
   LIST: [
     {
-      ICON: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c855e99a3702f742308a11_SidebarSimple.svg",
+      ICON: web,
       TITLE: "Web Development",
       SUMMARY:
         "End-to-end development services, covering both front-end and back-end, to create robust and scalable web applications.",
@@ -156,7 +186,7 @@ export const SERVICES = {
       ],
     },
     {
-      ICON: "https://cdn.prod.website-files.com/66c5d8b35ae804d24cca7f93/66c855e99a3702f742308a11_SidebarSimple.svg",
+      ICON: web,
       TITLE: "Full-Stack Development",
       SUMMARY:
         "End-to-end development services, covering both front-end and back-end, to create robust and scalable web applications.",
@@ -176,33 +206,73 @@ export const SERVICES = {
   TECHNOLOGY: [
     {
       NAME: "Node.js",
-      ICON: "",
+      ICON: node,
       LINK: "https://nodejs.org/en",
     },
     {
-      NAME: "Node.js",
-      ICON: "",
-      LINK: "https://nodejs.org/en",
+      NAME: "JavaScript",
+      ICON: javascript,
+      LINK: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
-      NAME: "Node.js",
-      ICON: "",
-      LINK: "https://nodejs.org/en",
+      NAME: "TypeScript",
+      ICON: typescript,
+      LINK: "https://www.typescriptlang.org",
     },
     {
-      NAME: "Node.js",
-      ICON: "",
-      LINK: "https://nodejs.org/en",
+      NAME: "Express",
+      ICON: express,
+      LINK: "https://expressjs.com",
     },
     {
-      NAME: "Node.js",
-      ICON: "",
-      LINK: "https://nodejs.org/en",
+      NAME: "NestJS",
+      ICON: nest,
+      LINK: "https://nestjs.com",
     },
     {
-      NAME: "Node.js",
-      ICON: "",
-      LINK: "https://nodejs.org/en",
+      NAME: "SQL",
+      ICON: sql,
+      LINK: "https://www.w3schools.com/sql",
+    },
+    {
+      NAME: "PostgreSQL",
+      ICON: postgresql,
+      LINK: "https://www.postgresql.org",
+    },
+    {
+      NAME: "React",
+      ICON: react,
+      LINK: "https://react.dev",
+    },
+    {
+      NAME: "Tailwind CSS",
+      ICON: tailwind,
+      LINK: "https://tailwindcss.com",
+    },
+    {
+      NAME: "HTML 5",
+      ICON: html5,
+      LINK: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    },
+    {
+      NAME: "CSS 3",
+      ICON: css3,
+      LINK: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    },
+    {
+      NAME: "GitHub",
+      ICON: github,
+      LINK: "https://github.com",
+    },
+    {
+      NAME: "VS Code",
+      ICON: vscode,
+      LINK: "https://code.visualstudio.com",
+    },
+    {
+      NAME: "Postman",
+      ICON: postman,
+      LINK: "https://www.postman.com",
     },
   ],
 };
@@ -220,23 +290,50 @@ export const CONTACT = {
   LINK: [
     {
       NAME: "LinkedIn",
-      LINK: "https://www.linkedin.com/",
-      ICON: "",
+      LINK: "https://www.linkedin.com/in/yagnik-gohil-087601189/",
+      ICON: linkedin,
     },
     {
-      NAME: "LinkedIn",
-      LINK: "https://www.linkedin.com/",
-      ICON: "",
+      NAME: "GitHub",
+      LINK: "https://github.com/Yagnik-Gohil",
+      ICON: github,
     },
     {
-      NAME: "LinkedIn",
-      LINK: "https://www.linkedin.com/",
-      ICON: "",
+      NAME: "X",
+      LINK: "https://x.com/yagnik_19",
+      ICON: x,
     },
     {
-      NAME: "LinkedIn",
-      LINK: "https://www.linkedin.com/",
-      ICON: "",
+      NAME: "Instagram",
+      LINK: "https://www.instagram.com/y.r.gohil",
+      ICON: instagram,
+    },
+  ],
+};
+export const LICENSES = {
+  TITLE: "Licenses Information",
+  SUMMARY:
+    "All graphical assets in this template are licensed for personal and commercial use. If You'd like to use a specific asset, please check the licenses below.",
+  LIST: [
+    {
+      TITLE: "✍️ Fonts",
+      SUMMARY:
+        "For “David Harrison”, we carefully selected the Inter font. This font is freely available for both personal and commercial use.",
+    },
+    {
+      TITLE: "🏞️ Icons",
+      SUMMARY:
+        "All icons used in “David Harrison” come from Phosphor Icons. They are free for personal and commercial use.",
+    },
+    {
+      TITLE: "🥰 Emoji",
+      SUMMARY:
+        "All emojis used on this site are sourced from Free Emoji Pack. They are free for personal and commercial use.",
+    },
+    {
+      TITLE: "🧑🏻 Memoji",
+      SUMMARY:
+        "All Memoji used on this site are sourced from Apple’s Memoji feature. They are free for personal and commercial use.",
     },
   ],
 };
