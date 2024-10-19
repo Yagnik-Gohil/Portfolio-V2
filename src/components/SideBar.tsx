@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FULL_NAME, IMAGE, TAG_LINE } from "../constant";
+import { EMAIL, FULL_NAME, IMAGE, TAG_LINE } from "../constant";
 import SideBarLink from "./SideBarLink";
 
 const SideBar = ({
@@ -63,10 +63,10 @@ const SideBar = ({
       </div>
       <div className="border-t border-[#ffffff1a] flex flex-col justify-start p-8 items-stretch">
         <Link
-          to={"/"}
-          className="bg-[#ffffff1a] hover:bg-[#ffffff4d] rounded-[10px] px-3 py-4 flex items-center justify-center text-[#ffffffa6] hover:text-white transition-colors duration-300"
+          to={EMAIL}
+          className="bg-[#ffffff1a] hover:bg-[#ffffff4d] rounded-[10px] px-3 py-4 flex items-center justify-center text-[#ffffffa6] hover:text-white transition-colors duration-300 shadow-card"
         >
-          <div className=" ">Send Mail</div>
+          <div>Send Mail</div>
         </Link>
       </div>
     </div>

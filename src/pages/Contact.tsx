@@ -1,21 +1,44 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ServiceIcon from "../components/ServiceIcon";
 import Tag from "../components/Tag";
-import { CONTACT, ICON } from "../constant";
+import { CONTACT, EMAIL, ICON } from "../constant";
 import { useBackground } from "../context/background";
 import SocialCard from "../components/SocialCard";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
   const { setBackground } = useBackground();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
-    // Update the background when the component mounts
     setBackground("linear-gradient(135deg, #20d7ff, #00a5cd 75%)");
-
-    // Optionally, reset or change the background on unmount
     return () => setBackground("linear-gradient(135deg, #ffce4c, #ff6321 75%)");
   }, [setBackground]);
+
+  const submit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Prevent the default form submission
+
+    const emailData = {
+      name,
+      email,
+      message,
+    };
+    // Validation check for empty fields
+    if (!name || !email || !message) {
+      alert("Please fill in all fields."); // Show alert if any field is empty
+      return; // Stop the function execution
+    }
+    const text = `Name: ${emailData.name}\nEmail: ${emailData.email}\nMessage: ${emailData.message}`;
+    console.log(text);
+
+    // Clear the form (optional)
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <>
       <section className="grid grid-cols-1 xl:grid-cols-2 p-6 md:p-12 bg-[#20d7ff08] border-b border-b-[#ffffff1a] gap-8 items-center">
@@ -65,26 +88,32 @@ const Contact = () => {
             </p>
           </div>
 
-          <form className="flex flex-col gap-2">
+          <form className="flex flex-col gap-2" onSubmit={submit}>
             <input
               type="text"
               placeholder="Your Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               className="px-5 py-[18px] bg-[#20d7ff0d] border border-[#20d7ff1a] text-white h-14 rounded-[10px] hover:b-[#20d7ff33] hover:bg-[#20d7ff1a] focus:b-[#20d7ff59] focus:bg-[#20d7ff33] transition-all duration-500 outline-none"
-            ></input>
+            />
             <input
               type="email"
               placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="px-5 py-[18px] bg-[#20d7ff0d] border border-[#20d7ff1a] text-white h-14 rounded-[10px] hover:b-[#20d7ff33] hover:bg-[#20d7ff1a] focus:b-[#20d7ff59] focus:bg-[#20d7ff33] transition-all duration-500 outline-none"
-            ></input>
+            />
             <textarea
               placeholder="How can I help you?"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               className="px-5 py-[18px] bg-[#20d7ff0d] border border-[#20d7ff1a] text-white min-h-36 rounded-[10px] hover:b-[#20d7ff33] hover:bg-[#20d7ff1a] focus:b-[#20d7ff59] focus:bg-[#20d7ff33] transition-all duration-500 outline-none"
-            ></textarea>
+            />
             <input
               type="submit"
               value="Send a Message"
               className="p-4 rounded-[10px] bg-[#20d7ff33] border border-[#20d7ff1a] text-[#20d7ff] leading-[112%] hover:bg-[#20d7ff59] transition-all duration-500 hover:shadow-card"
-            ></input>
+            />
           </form>
           <div className="flex flex-col justify-start items-center absolute top-0 right-0 left-0">
             <div
@@ -93,7 +122,7 @@ const Contact = () => {
             ></div>
           </div>
         </div>
-        <div className="flex flex-col  gap-3">
+        <div className="flex flex-col gap-3">
           <div className="flex flex-col p-6 pb-8 gap-5 rounded-xl relative overflow-hidden bg-[#20d7ff0d] border border-[#20d7ff0d]">
             <h2 className="text-white max-w-[184px] text-lg md:max-w-[400px] md:text-xl lg:text-2xl lg:max-w-[280px] leading-[112%] font-medium">
               {CONTACT.SOCIAL_LINK}
@@ -121,14 +150,14 @@ const Contact = () => {
               </p>
             </div>
             <Link
-              to={"/"}
+              to={EMAIL}
               className="bg-[#ffffff1a] hover:bg-[#ffffff4d] rounded-[10px] px-4 py-3 flex items-center justify-center text-[#ffffffa6] hover:text-white transition-colors duration-300 shadow-card"
             >
-              <div className=" ">Send Mail</div>
+              <div className="">Send Mail</div>
             </Link>
             <div className="flex justify-center items-center absolute bg-[#20d7ff1a] border-[#20d7ff33] border p-[28px] md:p-8 rounded-[50%] top-auto right-[-16px] bottom-[-8px] md:right-[-14px] md:bottom-[-14px] lg:p-10 lg:right-[-16px] lg:bottom-[-24px] left-auto">
               <img
-                src={ICON.PHONE}
+                src={ICON.MAIL}
                 className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
               ></img>
             </div>

@@ -15,7 +15,7 @@ const Home = () => {
           <p className="text-2xl max-w-[280px] md:max-w-[320px] lg:max-w-[400px] lg:text-[32px]">
             {HOME.INTRODUCTION}
           </p>
-          <p className="text-[#ffffff80] font-medium leading-[112%] max-w-[400px] text-sm lg:max-w-[296px]">
+          <p className="text-[#ffffff80] font-medium leading-[112%] max-w-[400px] text-sm lg:max-w-[320px]">
             {HOME.SUMMARY}
           </p>
         </div>

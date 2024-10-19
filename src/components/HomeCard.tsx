@@ -24,7 +24,7 @@ const HomeCard = ({
   return (
     <Link to={to} className={className}>
       <Tag background={color.background} border={color.border} title={title} />
-      <h2 className="text-lg max-w-36 leading-[112%] font-medium lg:text-2xl lg:max-w-48">{summary}</h2>
+      <h2 className="text-lg max-w-36 leading-[112%] font-medium lg:text-2xl lg:max-w-52">{summary}</h2>
       <div
         className="flex justify-center items-center absolute border p-[28px] md:p-8 rounded-[50%] top-auto right-[-16px] bottom-[-8px] md:right-[-14px] md:bottom-[-14px] lg:p-10 lg:right-[-16px] lg:bottom-[-24px] left-auto"
         style={{

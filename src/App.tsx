@@ -51,6 +51,10 @@ function App() {
               <img
                 src={path}
                 className="w-[20px] h-[20px] opacity-65 pointer-events-none max-w-[100%] inline-block align-middle z-[2]"
+                style={{
+                  filter: "brightness(0) saturate(100%) invert(100%)",
+                  WebkitFilter: "brightness(0) saturate(100%) invert(100%)",
+                }}
               />
             </div>
             <div className="flex flex-col flex-1">

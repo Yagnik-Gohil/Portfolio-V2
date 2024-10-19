@@ -20,7 +20,7 @@ const ServiceCard = ({
           <h2 className="text-[#2ef171] text-lg md:text-xl lg:text-2xl font-medium leading-[112%]">
             {item.TITLE}
           </h2>
-          <p className="text-[#ffffff80] font-medium leading-[112%] max-w-[400px] text-sm lg:max-w-[296px]">
+          <p className="text-[#ffffff80] font-medium leading-[112%] max-w-[400px] text-sm lg:max-w-[320px]">
             {item.SUMMARY}
           </p>
         </div>

@@ -9,6 +9,7 @@ import smile from "./assets/smile.svg";
 import suitcase from "./assets/suitcase.svg";
 import grid from "./assets/grid.svg";
 import phone from "./assets/phone.svg";
+import mail from "./assets/mail.svg";
 
 import back from "./assets/back.svg";
 import desktop from "./assets/desktop.svg";
@@ -18,6 +19,7 @@ import pen from "./assets/fountain-pen.svg";
 import book from "./assets/book.svg";
 import mailbox from "./assets/mailbox.svg";
 
+import terminal from "./assets/terminal.svg";
 import web from "./assets/web-section.svg";
 
 import node from "./assets/node-js.svg";
@@ -46,32 +48,34 @@ export const IMAGE = face1;
 export const MENU = menu;
 export const CLOSE = close;
 
+export const EMAIL = "mailto:gohilyagnik3@gmail.com";
+
 export const HOME = {
   PROFILE: face1,
   PROFILE_2: face2,
   PROFILE_3: face3,
-  INTRODUCTION: "👋 Hello, I'm David – Crafting Creative Code!",
+  INTRODUCTION: "👋 Hi, I'm Yagnik – Bringing Ideas to Life Through Code!",
   SUMMARY:
-    "As a creative developer, I blend code and design to build unique, user-centric experiences. Let's turn your ideas into a dynamic and engaging digital reality!",
-  ABOUT: "A Peek into My Creative Journey",
+    "Fullstack developer with 3+ years of experience building scalable backends using JavaScript (NestJS, FeathersJS), C# (ASP.NET Core), and crafting responsive frontends with React, alongside PostgreSQL for data management.",
+  ABOUT: "A Glimpse into My Creative Process",
   ABOUT_ICON: smile,
-  PORTFOLIO: "Top Work and Creative Projects",
+  PORTFOLIO: "Top Projects and Creative Work",
   PORTFOLIO_ICON: suitcase,
-  SERVICES: "Solutions to Meet Your Goals",
+  SERVICES: "Custom Solutions for Your Goals",
   SERVICES_ICON: grid,
-  CONTACT: "Let's Start a Conversation",
+  CONTACT: "Open to Conversations!",
   CONTACT_ICON: phone,
 };
 export const ABOUT = {
-  INTRODUCTION: "Inside My World – The Story Behind Work",
+  INTRODUCTION: "A Look Within – The Journey Behind My Work",
   SUMMARY:
-    "Get a glimpse into my journey and the inspiration behind my work. Discover what drives me and how my experiences shape my creative vision.",
-  PASSION: "✨ The Drive, Passion, and Vision Behind My Work",
+    "Discover the journey and the inspirations behind the work. Explore what drives creativity and how experiences shape the overall vision.",
+  PASSION: "✨ The Fuel & Passion Behind My Work",
   PASSION_SUMMARY_1:
-    "I'm David Harrison, a creative developer passionate about turning ideas into engaging digital experiences. Starting in New Jersey, my love for tech and design grew from building simple sites to developing complex applications.",
+    "My journey in technology and design has taken me from creating basic websites to developing intricate applications. I love problem-solving and thrive on overcoming challenges.",
   PASSION_SUMMARY_2:
-    "I blend technical skill with design to create seamless, user-friendly solutions, always pushing boundaries to exceed expectations.",
-  SKILL: "🔆 Unleashing My Skillful Superpowers",
+    "I integrate technical proficiency with design to develop smooth, user-friendly solutions, always striving to push limits and surpass expectations.",
+  SKILL: "🔆 Tapping into My Expertise",
   SKILL_LIST: [
     "Back-End Development",
     "Front-End Development",
@@ -82,17 +86,19 @@ export const ABOUT = {
     "Problem Solving",
     "Deployment",
   ],
-  AWARD: "🏆 Showcasing My Awards and Honors",
+  AWARD: "🏆 Displaying My Certifications",
   AWARD_LIST: [
-    { name: "🏆 Innovative Web Developer", year: 2024 },
-    { name: "🏅 Top Emerging Tech Talent", year: 2024 },
-    { name: "🥇 Best App Developer", year: 2024 },
+    {
+      name: "Node.js, Express, MongoDB & More: The Complete Bootcamp",
+      year: 2022,
+      link: "https://www.udemy.com/certificate/UC-2d6a8543-a8b5-4662-b9de-5354679465d1",
+    },
   ],
 };
 export const PORTFOLIO = {
-  TITLE: "Collection of My Exceptional Solutions",
+  TITLE: "Showcase of My Innovative Solutions",
   SUMMARY:
-    "Explore a selection of my top digital projects, where creativity meets innovation. Each piece reflects my commitment to delivering impactful solutions.",
+    "Discover a curated selection of my leading digital projects, where creativity intertwines with innovation. Each project showcases my dedication to providing impactful solutions.",
   LIST: [
     {
       id: "rick-brown",
@@ -165,44 +171,47 @@ export const ICON = {
   BOOK: book,
   MAIL_BOX: mailbox,
   PHONE: phone,
+  MAIL: mail,
 };
 export const SERVICES = {
-  INTRODUCTION: "Explore My Range of Specialized Services",
+  INTRODUCTION: "Discover My Array of Specialized Services",
   SUMMARY:
-    "Explore services crafted to bring your vision to life. From innovative solutions to expert support, I offer everything needed for exceptional results.",
+    "Explore a range of services crafted to make your vision a reality. From inventive solutions to expert support, I offer all the essentials for achieving remarkable results.",
   LIST: [
     {
-      ICON: web,
-      TITLE: "Web Development",
+      ICON: terminal,
+      TITLE: "Back-End Development",
       SUMMARY:
-        "End-to-end development services, covering both front-end and back-end, to create robust and scalable web applications.",
+        "Backend development services focused on building robust server-side solutions, ensuring seamless data management, API integration, and system security for scalable applications.",
       TAGS: [
-        "Responsive Design",
-        "Custom Features",
-        "Performance Boost",
-        "Responsive Design",
-        "Custom Features",
-        "Performance Boost",
+        "API Development",
+        "Database Management",
+        "Server-Side Logic",
+        "Performance Optimization",
+        "Microservices Architecture",
+        "RESTful Services",
+        "Authentication and Authorization",
       ],
     },
     {
       ICON: web,
-      TITLE: "Full-Stack Development",
+      TITLE: "Front-End Development",
       SUMMARY:
-        "End-to-end development services, covering both front-end and back-end, to create robust and scalable web applications.",
+        "Frontend development services that prioritize user experience and interface design, creating visually appealing and interactive web applications that engage users across all devices.",
       TAGS: [
         "Responsive Design",
-        "Custom Features",
-        "Performance Boost",
-        "Responsive Design",
-        "Custom Features",
-        "Performance Boost",
+        "Cross-Browser Compatibility",
+        "Accessibility Features",
+        "Modern Frameworks",
+        "Mobile-First Design",
+        "State Management",
+        "Frontend Frameworks",
       ],
     },
   ],
-  TECHNOLOGY_TITLE: "🧩 Tools & Technologies Powering My Creations",
+  TECHNOLOGY_TITLE: "🧩 The Tools and Technologies Driving My Projects",
   TECHNOLOGY_SUMMARY:
-    "Explore the cutting-edge tools and technologies I use to build innovative and effective digital solutions, from web and mobile apps to seamless integrations and optimizations.",
+    "Discover the advanced tools and technologies I leverage to create innovative and efficient digital solutions, encompassing web and backend applications, as well as seamless integrations and optimizations.",
   TECHNOLOGY: [
     {
       NAME: "Node.js",
@@ -277,16 +286,16 @@ export const SERVICES = {
   ],
 };
 export const CONTACT = {
-  TITLE: "Let's Connect and Collaborate",
+  TITLE: "Let’s Work Together!",
   SUMMARY:
-    "Reach out to discuss your project or ideas. I’m here to provide support and turn your vision into reality.",
+    "Contact me to discuss your project or ideas. I’m ready to provide support and help bring your vision to life.",
   FORM: "📤 Get In Touch",
   FORM_SUMMARY:
-    "Have a question or want to start a project? Contact me, and let’s make your ideas come to life!",
+    "Got a question or ready to kick off a project? Reach out, and let's bring your ideas to life!",
   SOCIAL_LINK: "🔹 Follow Me",
-  CONTACT: "🦋 Book a Call",
+  CONTACT: "✉️ Send Mail",
   CONTACT_SUMMARY:
-    "Have a question or want to start a project? Contact me, and let’s make your ideas come to life!",
+    "Got a question or ready to kick off a project? Shoot me an email, and let’s turn your ideas into reality!",
   LINK: [
     {
       NAME: "LinkedIn",
