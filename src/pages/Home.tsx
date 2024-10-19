@@ -1,6 +1,6 @@
 import HomeCard from "../components/HomeCard";
 import ProfileImage from "../components/ProfileImage";
-import { HOME } from "../constant";
+import { HOME, IMAGE } from "../constant";
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
         <ProfileImage
           background="#ffffff0d"
           border="#ffffff0d"
-          src={HOME.PROFILE}
+          src={IMAGE}
         />
         <div className="flex flex-col justify-between lg:flex-row text-white w-full gap-3">
           <p className="text-2xl max-w-[280px] md:max-w-[320px] lg:max-w-[400px] lg:text-[32px]">

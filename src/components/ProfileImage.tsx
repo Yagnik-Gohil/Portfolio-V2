@@ -19,7 +19,7 @@ const ProfileImage = ({
     >
       <img
         src={src}
-        className="w-14 h-14 md:w-20 md:h-20 lg:w-24 lg:h-24"
+        className="w-14 h-14 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-[100%]"
       ></img>
     </div>
   );

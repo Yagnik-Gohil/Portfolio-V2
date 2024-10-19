@@ -16,7 +16,9 @@ const PortfolioDetails = () => {
     if (!data) {
       navigate("/portfolio"); // Use "/portfolio" as the correct relative path
     }
-    setBackground(`linear-gradient(135deg, ${data?.color}, ${data?.color} 75%)`);
+    setBackground(
+      `linear-gradient(135deg, ${data?.color}, ${data?.color} 75%)`
+    );
     // Optionally, reset or change the background on unmount
     return () => setBackground("linear-gradient(135deg, #ffce4c, #ff6321 75%)");
   }, [data, navigate, setBackground]); // Add data and navigate as dependencies to avoid stale closures
@@ -29,6 +31,10 @@ const PortfolioDetails = () => {
             to="#"
             className="flex items-center gap-1 hover:gap-2 opacity-65 hover:opacity-100 transition-all duration-500"
             onClick={() => navigate(-1)}
+            style={{
+              filter: "brightness(0) saturate(100%) invert(100%)",
+              WebkitFilter: "brightness(0) saturate(100%) invert(100%)",
+            }}
           >
             <img src={ICON.BACK} className="w-4 h-4" />
             <p className="text-white">Back to Portfolio</p>
@@ -69,14 +75,16 @@ const PortfolioDetails = () => {
             </div>
             <div className="flex lg:flex-col items-end gap-2 lg:absolute lg:right-0 lg:bottom-0">
               <Link
-                to={"#"}
+                to={data.live}
                 className="text-[#ffffffa6] text-sm font-medium leading-[112%] border border-[#ffffff0d] bg-[#ffffff1a] px-4 py-3 rounded-[10px] hover:bg-[#ffffff4d] transition-all duration-300"
+                target="_blank"
               >
                 View Live
               </Link>
               <Link
-                to={"#"}
+                to={data.github}
                 className="text-[#ffffffa6] text-sm font-medium leading-[112%] border border-[#ffffff0d] bg-[#ffffff1a] px-4 py-3 rounded-[10px] hover:bg-[#ffffff4d] transition-all duration-300"
+                target="_blank"
               >
                 GitHub
               </Link>
@@ -86,9 +94,9 @@ const PortfolioDetails = () => {
       )}
       {data && (
         <section className="flex flex-col p-6 gap-4 md:p-12">
-         {data.gallery.map((path, index) => {
-            return <img src={path} key={index} className="rounded-lg"/>
-         })}
+          {data.gallery.map((path, index) => {
+            return <img src={path} key={index} className="rounded-lg" />;
+          })}
         </section>
       )}
     </>

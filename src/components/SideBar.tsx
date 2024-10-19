@@ -23,7 +23,7 @@ const SideBar = ({
           className="flex max-w-[100%] p-1 relative justify-center items-center border border-[#ffffff0d] rounded-[50%] bg-[#FFFFFF0D]"
           onClick={closeSidebar}
         >
-          <img src={IMAGE} className="w-[48px] h-[48px] block"></img>
+          <img src={IMAGE} className="w-[48px] h-[48px] block rounded-[100%]"></img>
           <div className="w-[10px] h-[10px] absolute rounded-[50%] bg-[#2ef171] top-auto right-1 bottom-1 left-auto animate-zoom-blink"></div>
         </Link>
         <div className="flex flex-col w-[100%]">

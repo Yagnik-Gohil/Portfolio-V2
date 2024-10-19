@@ -41,10 +41,29 @@ import linkedin from "./assets/linkedin.svg";
 import x from "./assets/x.svg";
 import instagram from "./assets/instagram.svg";
 
+import profile from "./images/profile.jpg";
+
+import weather0 from "./images/weather-0.png";
+import weather1 from "./images/weather-1.png";
+import weather2 from "./images/weather-2.png";
+
+import movie0 from "./images/movie-0.png";
+import movie1 from "./images/movie-1.png";
+
+import solo0 from "./images/solo-0.png";
+import solo1 from "./images/solo-1.png";
+
+import skribbl0 from "./images/skribbl-0.png";
+import skribbl1 from "./images/skribbl-1.png";
+import skribbl2 from "./images/skribbl-2.png";
+
+import ambient0 from "./images/ambient-0.png";
+import ambient1 from "./images/ambient-1.png";
+
 export const FULL_NAME = "Yagnik Gohil";
 export const TAG_LINE = "Software Engineer";
 
-export const IMAGE = face1;
+export const IMAGE = profile;
 export const MENU = menu;
 export const CLOSE = close;
 
@@ -56,7 +75,7 @@ export const HOME = {
   PROFILE_3: face3,
   INTRODUCTION: "👋 Hi, I'm Yagnik – Bringing Ideas to Life Through Code!",
   SUMMARY:
-    "Fullstack developer with 3+ years of experience building scalable backends using JavaScript (NestJS, FeathersJS), C# (ASP.NET Core), and crafting responsive frontends with React, alongside PostgreSQL for data management.",
+    "Fullstack developer with 3+ years of experience building scalable backends using JavaScript (NestJS, Express JS), C# (ASP.NET Core), and crafting responsive frontends with React, alongside PostgreSQL for data management.",
   ABOUT: "A Glimpse into My Creative Process",
   ABOUT_ICON: smile,
   PORTFOLIO: "Top Projects and Creative Work",
@@ -101,64 +120,70 @@ export const PORTFOLIO = {
     "Discover a curated selection of my leading digital projects, where creativity intertwines with innovation. Each project showcases my dedication to providing impactful solutions.",
   LIST: [
     {
-      id: "rick-brown",
-      color: "#8cc71b",
-      image:
-        "https://cdn.prod.website-files.com/66c737bcc8413594906f4c3e/66c744b391685bdacff10184_Thumbnail.avif",
-      name: "Rick Brown",
+      id: "ambient-chaos",
+      color: "#22c55e",
+      image: ambient0,
+      name: "Ambient Chaos",
       year: "2024",
       type: "Website",
-      tags: ["Portfolio"],
+      tags: ["Music"],
+      summary: "Ambient Chaos is a web app that lets users create a personalized ambient sound environment.",
+      github: "https://github.com/Yagnik-Gohil/Ambient-Chaos",
+      live: "https://ambient-chaos.yagnik.dev",
+      gallery: [ambient1],
+    },
+    {
+      id: "skribbl",
+      color: "#FFD460",
+      image: skribbl0,
+      name: "Skribbl",
+      year: "2024",
+      type: "Website",
+      tags: ["Multiplayer Game"],
+      summary: "Skribbl is a fun and engaging multiplayer drawing and guessing game. Players take turns sketching a word while others try to guess it in real-time. Built with an intuitive interface, it combines creativity and quick thinking, offering an enjoyable experience for users of all ages.",
+      github: "https://github.com/Yagnik-Gohil/skribbl",
+      live: "https://skribbl.yagnik.dev",
+      gallery: [skribbl1, skribbl2],
+    },
+    {
+      id: "solo",
+      color: "#f4c613",
+      image: solo0,
+      name: "Solo",
+      year: "2021",
+      type: "Website",
+      tags: [],
+      summary: "Solo is a fully responsive website built using HTML, CSS, JavaScript, and Bootstrap. Designed with a mobile-first approach, it ensures smooth and adaptive performance across various devices and screen sizes, offering an engaging user experience with clean, modern layouts.",
+      github: "https://github.com/Yagnik-Gohil/Solo",
+      live: "https://github.com/Yagnik-Gohil/Solo",
+      gallery: [solo1],
+    },
+    {
+      id: "weather",
+      color: "#39A2DB",
+      image: weather0,
+      name: "Weather",
+      year: "2022",
+      type: "Website",
+      tags: [],
       summary:
-        "Developing the 'Rick Brown' portfolio site was a challenge to blend striking visuals with user-friendly functionality. The goal was to showcase Rick's diverse photography while ensuring a seamless, intuitive experience.",
-      github: "https://rick-brown.framer.website/",
-      live: "https://rick-brown.framer.website/",
-      gallery: [
-        "https://cdn.prod.website-files.com/66c737bcc8413594906f4c3e/66c744e3a56792ed239fe39b_1.avif",
-        "https://cdn.prod.website-files.com/66c737bcc8413594906f4c3e/66c744b9315d3bc71db75f37_2.avif",
-      ],
+        "Access current weather data for any location on Earth including over 200,000 cities!. 5 day forecast is available at any location on the globe. It includes weather forecast data with 3-hour step.",
+      github: "https://github.com/Yagnik-Gohil/Weather",
+      live: "https://github.com/Yagnik-Gohil/Weather",
+      gallery: [weather1, weather2],
     },
     {
-      id: "it-conf",
-      color: "#FFB3C1",
-      image:
-        "https://cdn.prod.website-files.com/66c737bcc8413594906f4c3e/66c7432110a89d8aa3a1e767_Thumbnail.avif",
-      name: "IT/CONF",
-      year: "2024",
+      id: "movie-hunt",
+      color: "#00cdd7",
+      image: movie0,
+      name: "Movie Hunt",
+      year: "2022",
       type: "Website",
-      tags: ["Portfolio"],
-      summary: "",
-      github: "",
-      live: "",
-      gallery: [],
-    },
-    {
-      id: "adzen",
-      color: "#e7ff53",
-      image:
-        "https://cdn.prod.website-files.com/66c737bcc8413594906f4c3e/66c742188c0a131331c46cf1_Thumbnail.avif",
-      name: "ADZEN",
-      year: "2024",
-      type: "Website",
-      tags: ["Portfolio"],
-      summary: "",
-      github: "",
-      live: "",
-      gallery: [],
-    },
-    {
-      id: "andrew-williams",
-      color: "#111",
-      image:
-        "https://cdn.prod.website-files.com/66c737bcc8413594906f4c3e/66c73fce86d7ff45cb82f641_Thumbnail.avif",
-      name: "Andrew Williams",
-      year: "2024",
-      type: "Website",
-      tags: ["Portfolio"],
-      summary: "",
-      github: "",
-      live: "",
-      gallery: [],
+      tags: [],
+      summary: "Movie Hunt fetches real-time movie data using The Movie Database (TMDb) API, offering a dynamic and interactive user experience.",
+      github: "https://github.com/Yagnik-Gohil/MovieHunt",
+      live: "https://github.com/Yagnik-Gohil/MovieHunt",
+      gallery: [movie1],
     },
   ],
 };
@@ -292,7 +317,7 @@ export const CONTACT = {
   FORM: "📤 Get In Touch",
   FORM_SUMMARY:
     "Got a question or ready to kick off a project? Reach out, and let's bring your ideas to life!",
-  SOCIAL_LINK: "🔹 Follow Me",
+  SOCIAL_LINK: "🔹 Let's Connect",
   CONTACT: "✉️ Send Mail",
   CONTACT_SUMMARY:
     "Got a question or ready to kick off a project? Shoot me an email, and let’s turn your ideas into reality!",
