@@ -15,9 +15,9 @@ const SideBar = ({
         display === "none"
           ? "translate-x-full bg-[#0003]"
           : "translate-x-0 bg-[#00000073]"
-      } custom-blur absolute right-0 overflow-hidden md:relative md:translate-x-0 transform transition-transform duration-500 ease-in-out flex flex-col md:w-[40%] lg:w-[25%] max-w-[380px] w-[100%] h-[100%] border-l border-[#FFFFFF1A] border-r text-white rounded-bl-2xl z-50`}
+      } absolute right-0 overflow-hidden md:relative md:translate-x-0 transform transition-transform duration-500 ease-in-out flex flex-col md:w-[40%] lg:w-[25%] max-w-[380px] w-[100%] h-[100%] border-l border-[#FFFFFF1A] border-r text-white rounded-bl-2xl z-50`}
     >
-      <div className="flex flex-col px-8 py-10 border-b border-[#ffffff1a] items-start gap-5">
+      <div className="custom-blur flex flex-col px-8 py-10 border-b border-[#ffffff1a] items-start gap-5">
         <Link
           to={"/"}
           className="flex max-w-[100%] p-1 relative justify-center items-center border border-[#ffffff0d] rounded-[50%] bg-[#FFFFFF0D]"
@@ -31,7 +31,7 @@ const SideBar = ({
           <p className="block text-[#ffffff80]">{TAG_LINE}</p>
         </div>
       </div>
-      <div className="flex flex-col flex-1 px-5 py-4 overflow-auto text-sm">
+      <div className="custom-blur flex flex-col flex-1 px-5 py-4 overflow-auto text-sm">
         <SideBarLink
           to="/about"
           color="#ffc427"
@@ -61,7 +61,7 @@ const SideBar = ({
           closeSidebar={closeSidebar}
         />
       </div>
-      <div className="border-t border-[#ffffff1a] flex flex-col justify-start p-8 items-stretch">
+      <div className="custom-blur border-t border-[#ffffff1a] flex flex-col justify-start p-8 items-stretch">
         <Link
           to={EMAIL}
           className="bg-[#ffffff1a] hover:bg-[#ffffff4d] rounded-[10px] px-3 py-4 flex items-center justify-center text-[#ffffffa6] hover:text-white transition-colors duration-300 shadow-card"
