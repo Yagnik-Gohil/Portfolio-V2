@@ -19,7 +19,7 @@ const Contact = () => {
 
   const submit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent the default form submission
-    alert("Email functionality is coming soon! Thank you for your interest.")
+    alert("Message functionality is coming soon! Thank you for your interest.")
     return;
     const emailData = {
       name,

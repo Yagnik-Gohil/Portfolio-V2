@@ -350,14 +350,9 @@ export const LICENSES = {
     "All graphical assets in this template are licensed for personal and commercial use. If You'd like to use a specific asset, please check the licenses below.",
   LIST: [
     {
-      TITLE: "✍️ Fonts",
-      SUMMARY:
-        "For “David Harrison”, we carefully selected the Inter font. This font is freely available for both personal and commercial use.",
-    },
-    {
       TITLE: "🏞️ Icons",
       SUMMARY:
-        "All icons used in “David Harrison” come from Phosphor Icons. They are free for personal and commercial use.",
+        "All icons used in “Portfolio” come from SVG Repo. They are free for personal and commercial use.",
     },
     {
       TITLE: "🥰 Emoji",

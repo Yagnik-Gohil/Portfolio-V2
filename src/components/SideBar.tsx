@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { EMAIL, FULL_NAME, IMAGE, TAG_LINE } from "../constant";
+import { EMAIL, FULL_NAME, IMAGE, PORTFOLIO, SERVICES, TAG_LINE } from "../constant";
 import SideBarLink from "./SideBarLink";
 
 const SideBar = ({
@@ -43,14 +43,14 @@ const SideBar = ({
           to="/portfolio"
           color="#c06fff"
           text="Portfolio"
-          counter={2}
+          counter={PORTFOLIO.LIST.length}
           closeSidebar={closeSidebar}
         />
         <SideBarLink
           to="/services"
           color="#2ef171"
           text="Services"
-          counter={2}
+          counter={SERVICES.LIST.length}
           closeSidebar={closeSidebar}
         />
         <SideBarLink
