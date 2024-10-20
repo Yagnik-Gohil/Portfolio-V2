@@ -152,10 +152,10 @@ export const PORTFOLIO = {
       name: "Solo",
       year: "2021",
       type: "Website",
-      tags: [],
+      tags: ["Portfolio"],
       summary: "Solo is a fully responsive website built using HTML, CSS, JavaScript, and Bootstrap. Designed with a mobile-first approach, it ensures smooth and adaptive performance across various devices and screen sizes, offering an engaging user experience with clean, modern layouts.",
       github: "https://github.com/Yagnik-Gohil/Solo",
-      live: "https://github.com/Yagnik-Gohil/Solo",
+      live: "https://solo.yagnik.dev",
       gallery: [solo1],
     },
     {
@@ -169,7 +169,7 @@ export const PORTFOLIO = {
       summary:
         "Access current weather data for any location on Earth including over 200,000 cities!. 5 day forecast is available at any location on the globe. It includes weather forecast data with 3-hour step.",
       github: "https://github.com/Yagnik-Gohil/Weather",
-      live: "https://github.com/Yagnik-Gohil/Weather",
+      live: "https://weather.yagnik.dev",
       gallery: [weather1, weather2],
     },
     {
@@ -182,7 +182,7 @@ export const PORTFOLIO = {
       tags: [],
       summary: "Movie Hunt fetches real-time movie data using The Movie Database (TMDb) API, offering a dynamic and interactive user experience.",
       github: "https://github.com/Yagnik-Gohil/MovieHunt",
-      live: "https://github.com/Yagnik-Gohil/MovieHunt",
+      live: "https://movie-hunt.yagnik.dev",
       gallery: [movie1],
     },
   ],
